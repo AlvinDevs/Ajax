@@ -1,0 +1,56 @@
+/* Apply a dark background color to the body */
+body {
+    background-color: #333; 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; /* Use flexbox to center the form vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the body take up the full viewport height */
+  }
+  
+  /* Style the form */
+  #gif-form {
+    text-align: center; /* Center align form elements */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the form */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the form */
+  }
+  
+  /* Style the form elements (input, label, button) */
+  #search-term,
+  button[type="submit"] {
+    padding: 10px; /* Add padding to the input and button for spacing */
+    margin: 5px; /* Add margin to create space between elements */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Add rounded corners to the input and button */
+  }
+  
+  /* Style the "Remove All GIFs" button */
+  #remove-gifs {
+    background-color: #ff5733; /* Choose a color for the button */
+    color: #fff; /* Text color for the button */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Add rounded corners to the button */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
+  /* Style the GIF container */
+  #gif-container {
+    margin-top: 20px; /* Add space between the form and GIFs */
+    display: flex;
+    flex-wrap: wrap; /* Allow GIFs to wrap to the next line if they overflow */
+    justify-content: center; /* Center align GIFs horizontally */
+  }
+  
+  /* Style individual GIFs (if needed) */
+  img {
+    max-width: 100%; /* Ensure GIFs don't exceed their container width */
+    margin: 10px; /* Add space around each GIF */
+    border-radius: 5px; /* Add rounded corners to each GIF */
+  }
+  
